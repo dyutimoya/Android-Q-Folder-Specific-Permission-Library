@@ -2,6 +2,7 @@ package com.novastar.library;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.documentfile.provider.DocumentFile;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        DocumentFile[] documentFiles = permission.GetResult(data, "key");
         System.out.println(Arrays.toString(permission.GetResult(data, "path2")));
     }
 }
