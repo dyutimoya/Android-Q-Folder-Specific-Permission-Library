@@ -50,6 +50,7 @@ if (permission.isPermissionAlreadyTaken("key")){
 
 ```
 
+[![](https://jitpack.io/v/dyutimoya/Android-Q-Folder-Specific-Permission-Library.svg)](https://jitpack.io/#dyutimoya/Android-Q-Folder-Specific-Permission-Library)
 
 ## Authors
 
